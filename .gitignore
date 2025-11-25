@@ -1,0 +1,84 @@
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+env.*/
+venv.*/
+.conda/
+.env/
+.python-version
+
+# Packaging / build artifacts
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# Test / coverage / type-checking
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+htmlcov/
+.mypy_cache/
+.pytype/
+.dmypy.json
+dmypy.json
+
+# IDE / editor / project files
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Local data / temp outputs
+tmp/
+temp/
+test_output_temp/
+tests/test_output_temp/
+output/
+outputs/
+runs/
+
+# ComfyUI / model-related (heavy binaries)
+# Avoid committing large models; keep them in ComfyUI's models/ instead.
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+*.onnx
+
+# If you keep any local models directory for manual experiments, ignore it:
+models/
+checkpoints/
+**/models/
+**/checkpoints/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini

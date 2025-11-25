@@ -1,0 +1,8 @@
+# Requirements for long-v2v-custom-node
+# This is a ComfyUI custom node for video generation
+
+torch>=2.0.0
+rich>=13.0.0
+numpy>=1.21.0
+# Note: For GPU acceleration, install PyTorch with CUDA support:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
