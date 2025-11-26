@@ -77,6 +77,11 @@ class TestMultiChunkProcessing:
             assert len(loaded_memory.recent_latents) == len(memory.recent_latents)
             assert len(loaded_memory.summary_tokens) == len(memory.summary_tokens)
             assert len(loaded_memory.summary_scores) == len(memory.summary_scores)
+            # Verify configuration preserved
+            assert loaded_memory.recent_k == memory.recent_k
+            assert loaded_memory.summary_hw == memory.summary_hw
+            assert loaded_memory.max_summary == memory.max_summary
+            assert loaded_memory.scene_cut_threshold == memory.scene_cut_threshold
             
             # Verify anchor preserved
             assert torch.allclose(loaded_memory.anchor_latents, memory.anchor_latents)

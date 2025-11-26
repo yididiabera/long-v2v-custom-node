@@ -281,7 +281,6 @@ class AnimeFramePackNode:
         # 2a) Auto-tune recent_k if enabled
         if auto_tune_vram:
             try:
-                import torch
                 total_vram = torch.cuda.get_device_properties(device).total_memory / (1024**3)
                 allocated_vram = torch.cuda.memory_allocated(device) / (1024**3)
                 available_vram = total_vram - allocated_vram

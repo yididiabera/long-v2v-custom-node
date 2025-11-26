@@ -2,12 +2,8 @@ import torch
 import pytest
 import sys
 import os
-import logging
 from rich.console import Console
-from rich.logging import RichHandler
-from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn
 from rich.panel import Panel
-from rich.text import Text
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
